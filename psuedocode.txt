@@ -1,0 +1,20 @@
+
+
+Clean player heights
+
+clean player experience
+
+balance TEAMS
+  create a list of PLAYERS
+  randomize the list
+  divide the list into three team lists
+
+
+format
+   include a start menu
+   ask which team the user would like to view
+   display team stats
+      team name
+      total PLAYERS
+      player names separated by commas
+      
