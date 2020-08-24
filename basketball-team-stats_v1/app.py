@@ -19,7 +19,6 @@ def clean_data():
             player['experience'] = True
         elif player['experience'] == 'NO':
             player['experience'] = False
-    print(players)
 
 
 
