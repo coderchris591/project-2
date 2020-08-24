@@ -17,4 +17,7 @@ format
       team name
       total PLAYERS
       player names separated by commas
-      
+
+save cleaned data to a new data structure
+
+  new_dictionary = {'player': player['height']}

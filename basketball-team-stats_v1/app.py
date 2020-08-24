@@ -7,20 +7,20 @@ players = copy.deepcopy(PLAYERS)
 teams = copy.deepcopy(TEAMS)
 num_players_team = int(round(len(players) / len(teams)))
 
-
 def clean_data():
     for player in players:
         s = player['height'].split()
         for number in s:
             if number.isdigit():
                 heights = int(number)
+                player['height'] = heights
     for player in players:
         if player['experience'] == 'YES':
-            experience = True
+            player['experience'] = True
         elif player['experience'] == 'NO':
-            experience = False
-        player_heights_experience = {player['name']: heights,
-        'experience': experience}
+            player['experience'] = False
+    print(players)
+
 
 
 def balance_teams():
@@ -69,7 +69,7 @@ def start():
                 print('Oops, thats not a 1 or a 2 -- try again')
 
 if __name__ == "__main__":
-        clean_data()
-        player_list = []
-        balance_teams()
-        start()
+    clean_data()
+    player_list = []
+    balance_teams()
+    start()
